@@ -20,5 +20,5 @@ function example(req, res){
 }
 
 app.get('/*', (req, res) => {
-  example();
+  example(req, res);
 });
