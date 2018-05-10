@@ -8,6 +8,7 @@ function example(req, res){
           res.status(200).set({'content-type':'text/html'});
           res.write("<h1>" + JSON.stringify(resp) + "</h1>");
           res.end();
+          db.close();
         })// I think this one is needed as well, idk.
         .catch(function(err){
           console.log(err.stack);
