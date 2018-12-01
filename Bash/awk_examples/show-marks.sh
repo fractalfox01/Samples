@@ -1,0 +1,27 @@
+echo "First; we display just marks.txt.";
+echo "The command: awk '{print}' marks.txt";
+echo "will display the following";
+echo "";
+echo "--------Example Output-----------";
+awk '{print}' marks.txt;
+echo "---------End Example-------------";
+echo "";
+echo "Or, you can add some formatting.";
+echo "The command: awk 'BEGIN{printf \"Sr \\tNo\\tName\\tSub\\t\\tMarks\\n\"} {print}' marks.txt";
+echo "";
+echo "--------Example Output-----------";
+awk 'BEGIN{printf "Sr \tNo\tName\tSub\t\tMarks\n"} {print}' marks.txt
+echo "----------End Example------------";
+echo "";
+echo "The command: awk '{print \$3 \"\\t\" \$4}' marks.txt";
+echo "";
+echo "--------Example Output-----------";
+awk '{print $3 "\t" $4}' marks.txt;
+echo "---------End Example-------------";
+echo "";
+echo "The command: awk -f command.awk marks.txt";
+echo "";
+echo "--------Example Output-----------";
+awk -f command.awk marks.txt;
+echo "---------End Example-------------";
+echo "";
