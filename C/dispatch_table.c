@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "hdr.h"
+#include "dispatch_table.h"
 
 int move_up(int f, int s)
 {
