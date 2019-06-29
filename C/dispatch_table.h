@@ -1,7 +1,7 @@
 /*
 ** This header goes with dispatch_table.c
-** map_movement is declared and instantiated as
-** pointers to their respective function.
+** map_movement is type defined then instantiated with 4
+** pointers to their respective function names.
 */
 
 #ifndef DISPATCH_TABLE_H
