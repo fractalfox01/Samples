@@ -1,3 +1,16 @@
+/*
+** The following is example code showing a basic dispatch table (ie. Jump table).
+** The dispatch table contains 4 function pointers, each which simple displays 
+** (Up, Down, Left, and Right) along with two integers that have been passed along.
+**
+** typedef definitions are included in the header file dispatch_tables.h
+**
+** This example works by 
+**    - taking in a character string (created in main).
+**    - iterating through the string for the characters "uldr"
+**    - printing out a coresponding "up", "left", "down", "right" or "No matches..." to the console screen.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "dispatch_table.h"
@@ -29,7 +42,11 @@ int move_right(int f, int s)
 void  passoff(map_movement *myarr[4], char *str)
 {
   int i = 0;
-
+  /* 
+  ** Iterate through str; check if equal to 'u', 'd', 'l', or 'r'
+  ** and pass off to appropriate function
+  ** else, print "No matches..." to console.
+  */
   while (i < 8)
   {
     if (str[i] == 'u')
