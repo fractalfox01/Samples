@@ -109,9 +109,9 @@ t_arr *init_arr(void)
 ** Testing:
 **
 ** the following test begins by populating a new Array pointer
-** up to a maz size of 1,000,000,000 (1 billion)
+** up to a maz size of 100,000,000 (100 million)
 ** then removes each element in the array by using the defined Remove_last macro.
-** The program then repopulates the now (1 billion) length array up to half the last loops
+** The program then repopulates the now (100 million) length array up to half the last loops
 ** size "c"; and so on until c is equal to zero.
 */
 
@@ -124,7 +124,7 @@ int main(void)
   
   j = 0;
   i = 1;
-  c = 1000000000;
+  c = 100000000;
   arr = init_arr();
   while (c > 0)
   {
