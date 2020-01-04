@@ -1,6 +1,6 @@
 /************************************************************************************
 *  AUTHOR: Thomas V.
-*  CREATED: 01/03/2020, 20:20:020
+*  CREATED: 01/03/2020, 20:20:20
 *  A Small script for hackthebox.eu's web challenge Emdee
 *
 *  This script queries a URL hosted by hackthebox.eu for a string in an html page.
