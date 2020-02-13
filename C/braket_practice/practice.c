@@ -127,28 +127,32 @@ char  *chomp_at_delim(char *str, char *delim)
   return (chomp);
 }
 
-int main(void) {
+int main(void)
+{
   char  *tmp;
 
   tmp = NULL;
   printf("Hello World\n");
+  
   printf("count: %d\n", ft_strdelim_count("hello world\ngoodbye moon!", " \no"));
   ft_strdelim_count("echo\n {\"hello world\"}", "\"}{");
-  // tmp = chomp_at_delim("echo\n {\"hello world\"}", DOUBLE_QUOTE_DELIM);
-  // printf("chomped: %s\n", tmp);
+
   tmp = chomp_at_delim("echo\n {\"hello world\"}", CURLY_BRAKETS_DELIM);
   if (tmp)
     printf("chomped: %s\n", tmp);
   ft_strdel(&tmp);
+  
   tmp = chomp_at_delim("echo\n {\"hello world\"}", DOUBLE_QUOTE_DELIM);
   if (tmp)
     printf("chomped: %s\n", tmp);
   ft_strdel(&tmp);
+  
   tmp = chomp_at_delim("echo\n {\"hello world\"}", "\nb");
   if (tmp)
     printf("chomped: %s\n", tmp);
   else
     printf("not found\n");
   ft_strdel(&tmp);
+  
   return 0;
 }
